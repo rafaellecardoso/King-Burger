@@ -6,22 +6,22 @@ html, body{
 }
 header{
     background:red ;
-    grid-area: h;
+    grid-area:h;
 }
 
 main{
     background:blue ;
-    grid-area: m;
+    grid-area:m ;
 }
 
 aside{
     background:yellow ;
-    grid-area: a;
+    grid-area:a ;
 }
 
 footer{
     background:green ;
-    grid-area: f;
+    grid-area:f ;
 }
 
 .container{
@@ -31,6 +31,6 @@ footer{
     grid-template-areas: 
     "h h"
     "m a"
-    "f f"
+    "f f";
 }
 
