@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 // páginas
 import Home from './routes/Home';
 import PecaDelivery from './routes/PecaDelivery';
+import Contato from './routes/Contato';
 
 import './index.css'
 
@@ -19,9 +20,14 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/contato",
+        element: <Contato />,
+      },
+      {
         path: "/new",
         element: <PecaDelivery />,
       },
+      
     ],
   },
 ])
