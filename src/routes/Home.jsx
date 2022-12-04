@@ -16,7 +16,9 @@ const Home = () => {
             
          const response = await axios.get("https://json-server-oh2f.onrender.com/hamburguer")
 
-         console.log(response);
+         const data = response.data;
+
+         setPosts(data);
         } catch (error) {
             console.log(error);            
         }

@@ -13,8 +13,11 @@ const Navbar = () => {
                 <Link to={'/'}>Home</Link>
             </li>
             <li>
+                <Link to={'/contato'}>Contato</Link>
+            </li>
+            <li>
                 <Link to={'/new'} className="new-btn">
-                     Peça Delivery</Link>
+                    Peça seu Delivery</Link>
             </li>
         </ul>
     </nav>
