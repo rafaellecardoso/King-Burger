@@ -33,3 +33,19 @@ footer{
     "m a"
     "f f";
 }
+
+introduçao{
+    display: flex;
+}
+
+explicaçao{
+    display: flex;
+}
+
+motivaçao{
+    display: flex;
+}
+
+enceramento{
+    display: flex;
+}
