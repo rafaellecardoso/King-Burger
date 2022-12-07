@@ -50,6 +50,7 @@ nav .menu-icon {
         height: 100%;
         top: 0;
         left: 0;
+        transform: translateX(-100%);
         display: flex;
         align-items: center;
         flex-direction: column; 
@@ -57,8 +58,11 @@ nav .menu-icon {
         transition: 0.1s ease-in;
         background-color: #17191f;
     }
-
     
+    nav ul.active{
+        transform: translateX(0);
+    }
+
     nav ul li{
         padding: 10px;
     }
