@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
         <h2>
-            <Link to={'/'}>King Burger</Link>
+            <Link to={'/'}> <img className='logo' src="./img/logoking-fun.png" /> </Link>
         </h2>
         <ul>
             <li>
@@ -20,8 +20,25 @@ const Navbar = () => {
                     Peça seu Delivery</Link>
             </li>
         </ul>
+
+    <div className='menu-icon'> <img className='menu' src="./img/menu.png"/> </div>
     </nav>
   )
 }
+
+var menu = document.querySelector('nav ul');
+var menuBar = document.querySelector('nav .menu-icon');
+var iconMenu = document.querySelector('nav .menu-icon img');
+
+menuBar.addEventListener('click',function(){
+
+    if (iconMenu.getAttribute("src") == 'img/menu.png') {
+        iconMenu.setAttribute("src","img/close.png");
+    }else{
+        iconMenu.setAttribute("src","img/menu.png");
+    }
+
+   menu.classList.toggle('active');
+});
 
 export default Navbar
