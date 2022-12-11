@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #17191f;
+    background-color: #665656;
 }
 
 .navbar h2 a {
@@ -28,43 +28,17 @@ nav ul li{
     opacity: 1;
 }
 
-.menu {
-    width: 2rem;
-    height: 2rem;
-    filter: invert(100%);
-}
-
-nav .menu-icon {
-    cursor: pointer;
-    display: none;
-}
 
 @media (max-width: 800px) {
-    nav .menu-icon{
-        display: block;
-    }
-
-    nav ul{
-        position: fixed;
-        width: 50%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
+    nav {
         display: flex;
         align-items: center;
-        flex-direction: column; 
-        justify-content: center;
-        transition: 0.1s ease-in;
-        background-color: #17191f;
-    }
-    
-    nav ul.active{
-        transform: translateX(0);
+        flex-direction: column;
     }
 
     nav ul li{
         padding: 10px;
+        padding-top: 3rem;
     }
 
 }

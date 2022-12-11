@@ -20,8 +20,6 @@ const Navbar = () => {
                     Peça seu Delivery</Link>
             </li>
         </ul>
-
-    <div className='menu-icon'> <img className='menu' src="./img/menu.png"/> </div>
     </nav>
   )
 }
