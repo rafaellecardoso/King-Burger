@@ -1,5 +1,4 @@
 import "./Home.css";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -43,7 +42,21 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    
 
+    <div className="sobreaEmpresa">
+    <h1>Sobre a empresa</h1>
+            <p>
+             King Burger é uma empresa que visa fazer um hamburguer mais gostoso e criativo para o cliente.
+             
+             Foi criado pelos... que tinham um sonho de criar um negócio de sucesso.
+             
+             O king burguer tem como missão a qualidade.
+
+             A empresa preza pela qualidade excelente no preparo nos seus produtos, assim como no atendimento de todo o público, no ambiente familir e tranquilo. 
+            </p>
+            </div>
+            
   </div>
 
   );

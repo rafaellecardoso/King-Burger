@@ -12,3 +12,25 @@
     border-radius: 15px;
     background-color: rgb(206, 102, 102);
 }
+
+.sobreaEmpresa{
+  margin-top: 30px;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  border: 2px solid rgb(206,102,102);
+  
+
+
+}
+
+.sobreaEmpresa h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.sobreaEmpresa p {
+    font-size: 1.3rem;
+    text-align: left;
+    padding-inline: 30px;
+}
