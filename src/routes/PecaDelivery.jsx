@@ -10,101 +10,65 @@ const PecaDelivery = () => {
 
   const [nome, setNome] = useState()
   const [preco, setPreco] = useState()
+  const [descricao, setDescricao] = useState()
+
+
 
   // Novo Hamburguer
   const createPost = async (e) => {
     e.preventDefault();
 
-    console.log ({nome, preco});
-
-    // const post = {title, body, userId: 1};
-
     await blogFetch.post("/hamburguer", {
       nome: nome,
-      preco: preco
+      preco: preco,
+      descricao: descricao
     })
+    alert(`Hamburguer "${nome}" cadastrado com sucesso!`)
   }
 
-  const [burguer, setBurguer] = useState([]);
-
-  useEffect(() => {
-    blogFetch.get("/hamburguer")
-    .then(response=>setBurguer(response.data))
-  }, [])
-
-
-  // Buscar Hamburgueres
-
-  // const getPosts = async() => {
-
-  //     try {
-          
-  //      const response = await blogFetch.get("/hamburguer");
-
-  //      const data = response.data;
-
-  //      setPosts(data);
-  //     } catch (error) {
-  //         console.log(error);            
-  //     }
-  // };
-
-
-
-
-
-  const deletePosts = async() => {
-
-  }
-
-  // useEffect(() => {
-  //     getPosts();
-      
-  // }, []);
-
-
-  burguer.map(item => (
-    <div>
-      <ul className='list-h'>
-        <li className='nm'>{item.nome}</li>
-        <li className='dc'>{item.descricao}</li>
-        <li className='pc'>R$ {item.preco}</li>
-      </ul>
-    </div>
-  ))
   return (
-    <>
-    <div className='new-post'>
-    <h2>Inserir burger</h2>
-    <form onSubmit={(e) => createPost(e)}>
-      <div className='form-control'>
-        <label htmlFor="title">Título</label>
-        <input
-         type="text"
-         name="title" 
-         id="title"
-         placeholder='Digite o burger'
-         onChange={(e) => setNome(e.target.value)}/>
+    <div className='wrapper-cadastro'>
+      <div className='container-cadastro'>
+        <h2>Cadastrar novo hamburguer</h2>
+        <form onSubmit={(e) => createPost(e)}>
+          <div>
+            <label htmlFor="nome">Nome do hamburguer</label>
+            <input
+              type="text"
+              name="nome"
+              required
+              placeholder="Digite o nome do hamburguer"
+              id="nome"
+              onChange={(e) => setNome(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="descricao">Descricao </label>
+            <input
+              type="text"
+              required
+              name="descricao"
+              placeholder="Digite os ingredientes"
+              id="descricao"
+              onChange={(e) => setDescricao(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="preco">Preço: </label>
+            <input
+              type="number"
+              required
+              name="preco"
+              placeholder="Digite o preço"
+              id="preco"
+              onChange={(e) => setPreco(e.target.value)}
+            />
+          </div>
+          <input className='btn-cadastrar' type="submit" value="Cadastrar hambúrguer" />
+        </form>
       </div>
-
-      <div className='form-control'>
-        <input type="number" onChange={(e) => setPreco(e.target.value)}></input>
-      </div>
-      {/* <div className='form-control'>
-        <label htmlFor="body">Conteúdo</label>
-        <textarea name="body" id="body" placeholder='Digite o conteúdo'
-        onChange={(e) => setBody(e.target.value)}></textarea>
-      </div> */}
-
-      <button onClick={createPost} className='btn' >Criar post</button>
-    </form>
-  </div>
-
-
-
-    
-    </>
-  )
+    </div>
+  );
 }
 
 export default PecaDelivery

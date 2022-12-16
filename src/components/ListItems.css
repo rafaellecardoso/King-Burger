@@ -1,25 +1,10 @@
 h2{
     font-size: 3rem;
 }
-.wrapper-cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container-cadastro{
+.container-cardapio{
     background-color:antiquewhite;
     color: black;
     font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 460px;
-    width: 700px;
-    text-align: center;
-    border-radius: 16px;
-}
-.container-cadastro div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,13 +19,6 @@ h2{
     color: black;
     padding-inline: 30px;
    
-}
-.btn-cadastrar{
-    margin-top: 12px;
-    border-radius: 8px;
-    border: 2px solid  black;
-    padding: 10px 20px;
-    background-color: #5cb85c
 }
 .itens-cardapio{
     border-bottom: 1px solid black;

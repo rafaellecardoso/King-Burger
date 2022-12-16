@@ -10,6 +10,7 @@ import PecaDelivery from './routes/PecaDelivery';
 import Contato from './routes/Contato';
 
 import './index.css'
+import Cardapio from './routes/Cardapio';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,10 @@ const router = createBrowserRouter([
         path: "/new",
         element: <PecaDelivery />,
       },
-      
+      {
+        path: "/cardapio",
+        element: <Cardapio />
+      }
     ],
   },
 ])
