@@ -2,7 +2,7 @@ h2{
     font-size: 3rem;
 }
 .container-cardapio{
-    background-color:antiquewhite;
+    background-color:white;
     color: black;
     font-size: 1.5rem;
     display: flex;
@@ -15,7 +15,7 @@ h2{
     flex-direction: column;
     gap: 30px;
     padding-left: 0;
-    background-color: antiquewhite;
+    background-color:white;
     color: black;
     padding-inline: 30px;
    
