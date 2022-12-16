@@ -11,7 +11,6 @@ const PecaDelivery = () => {
   const [nome, setNome] = useState()
   const [preco, setPreco] = useState()
 
-
   // Novo Hamburguer
   const createPost = async (e) => {
     e.preventDefault();
