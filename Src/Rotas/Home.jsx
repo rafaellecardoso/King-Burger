@@ -6,15 +6,15 @@ const Home = () => {
   return ( 
 
   <div>
-    <Carousel>
+   <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
           src="./img/burger3.jpg"
           alt="First slide"/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Bacon Geleia Barbecue</h3>
+          <p> Graça e doçura em cada mordida.</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -24,8 +24,8 @@ const Home = () => {
           src="./img/burger16.jpg"
           alt="Second slide"/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Caminhos do Infinito</h3>
+          <p>Debrave o infinito em cada mordida.</p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -35,10 +35,8 @@ const Home = () => {
           src="./img/batata1.jpg"
           alt="Third slide"/>
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Combo da Misericórdia</h3>
+          <p> Monte seu combo da misericordia</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
